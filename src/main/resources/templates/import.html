@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form method="post" th:action="@{/import/insert}" enctype="multipart/form-data">
+<input type="file" name="csv" id="exampleInputFile" accept=".csv"><br>
+<button>送信</button>
+</form>
+</body>
+</html>
