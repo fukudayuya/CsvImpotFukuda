@@ -50,14 +50,12 @@ public class ImportController {
 		InputStreamReader isr = new InputStreamReader(fIStream);
 		BufferedReader br = new BufferedReader(isr);
 		String str;
-//		List<Student> studentList = new ArrayList<>(); //空のリストを作る.
 		 while((str = br.readLine()) != null){ //csvファイルを1行ずつ読み込む.
 			 String[] results = str.split(","); //csvファイル1行をカンマごとに分割して配列にいれる
 			 
 			 Student student = new Student();
 			 student.setName(results[0]);
 			 student.setEmail(results[1]);
-//			 studentList.add(student);
 			 studentService.insert(student); //DBへ1行ずつinsert
 			  }
 		 return "success";
