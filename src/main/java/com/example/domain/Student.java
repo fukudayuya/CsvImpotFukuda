@@ -1,19 +1,19 @@
 package com.example.domain;
 
 public class Student {
-	
-	private Integer id;
-	
+
+//	private Integer id;
+
 	private String name;
-	
+
 	private String email;
-	
-	public Integer getId() {
-		return id;
-	}
-	public void setId(Integer id) {
-		this.id = id;
-	}
+
+//	public Integer getId() {
+//		return id;
+//	}
+//	public void setId(Integer id) {
+//		this.id = id;
+//	}
 	public String getName() {
 		return name;
 	}
@@ -26,14 +26,14 @@ public class Student {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	@Override
-	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", email=" + email + "]";
-	}
-	
-	
-	
-	
+
+//	@Override
+//	public String toString() {
+//		return "Student [id=" + id + ", name=" + name + ", email=" + email + "]";
+//	}
+
+
+
+
 
 }

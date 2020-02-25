@@ -5,7 +5,9 @@
 <title>Insert title here</title>
 </head>
 <body>
+<!-- type=fileを使用する際は親要素のformにenctype="multipart/form-data"が必要。これが無いとファイル内のデータが読み込まれない -->
 <form method="post" th:action="@{/import/insert}" enctype="multipart/form-data">
+<!-- acceptはファイルの受け入れる種類を指定 -->
 <input type="file" name="csv" id="exampleInputFile" accept=".csv"><br>
 <button>送信</button>
 </form>
